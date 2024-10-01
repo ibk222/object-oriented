@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <script language="javascript"></script>
+  </head>
+  <body>
+    <div>
+      <h1>My cart items</h1>
+
+      <!-- entire cart container -->
+
+      <section
+        id="cart__container"
+        class="contianer mx-auto flex-col lg:flex-row flex justify-center gap-8 h-screen"
+      >
+        <!-- cart items -->
+        <div id="cart__items__container" class="max-w-[600px] w-full"></div>
+        <!-- cart items ends here -->
+
+        <!-- cart summary -->
+        <div class="shadow-md p-5 h-fit">
+          <h2 class="font-bold text-lg">
+            Total amount of items: <span id="display__cart__total"></span>
+          </h2>
+
+          <button
+            id="check__out__btn"
+            class="bg-green-500 text-white text-lg font-semibold p-2 rounded-md mt-2"
+          >
+            Proceed to check out
+          </button>
+        </div>
+        <!-- ************** -->
+      </section>
+      <!-- ***************** -->
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
